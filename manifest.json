@@ -1,0 +1,12 @@
+{
+    "display_name": "CG模式",
+    "loading_order": 14,
+    "requires": [],
+    "optional": [],
+    "js": "index.js",
+    "css": "style.css",
+    "author": "姬寻",
+    "version": "1.0.0",
+    "auto_update": true,
+    "homePage": "https://github.com/JiXun-dfwe/CG-Mode"
+}

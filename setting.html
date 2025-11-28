@@ -1,0 +1,161 @@
+<div id="CG_Mode_setting" class="settings-box">
+    <div class="inline-drawer">
+        <div class="inline-drawer-toggle inline-drawer-header settings-header">
+            <b>CG Mode</b>
+            <small>自动扫描世界书并根据标签更改背景与播放音乐</small>
+            <div
+                class="inline-drawer-icon fa-solid fa-circle-chevron-down down"
+            ></div>
+        </div>
+        <div class="inline-drawer-content">
+            <label class="flex-container">
+                <input
+                    id="CG_Mode_enable"
+                    class="CG_setting_input"
+                    data-setting-key="extensionEnable"
+                    type="checkbox"
+                />
+                <span>启用CG模式</span></label
+            >
+            <label class="flex-container">
+                <input
+                    id="CG_Mode_local"
+                    class="CG_setting_input"
+                    data-setting-key="localMode"
+                    type="checkbox"
+                />
+                <span
+                    >本地模式<small> 使用酒馆内置或上传的背景图</small></span
+                ></label
+            >
+
+            <div class="settings-block">
+                <div class="flex-container">
+                    <div class="flex1">
+                        <h4>资源服务器 URL</h4>
+                        <small
+                            >存放图片和音频的静态资源服务器地址 (例如:
+                            http://127.0.0.1:8000)</small
+                        >
+                    </div>
+                    <div class="flex1">
+                        <div class="flex-container">
+                            <input
+                                id="CG_server_url"
+                                class="text_pole CG_setting_input"
+                                data-setting-key="ASSET_SERVER_URL"
+                                type="text"
+                                placeholder="输入URL..."
+                            />
+                            <div
+                                id="CG_check_connection"
+                                class="menu_button fa-solid fa-link"
+                                title="测试连接"
+                                style="
+                                    max-width: 40px;
+                                    margin-left: 5px;
+                                    cursor: pointer;
+                                "
+                            ></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <hr />
+
+            <div class="settings-block">
+                <div class="flex-container">
+                    <div class="flex1">
+                        <h4>扫描消息数</h4>
+                        <small
+                            >每次触发时扫描最近的多少条消息来寻找关键词</small
+                        >
+                    </div>
+                    <div class="flex1">
+                        <input
+                            id="CG_recent_message_count_to_scan"
+                            class="text_pole CG_setting_input"
+                            data-setting-key="recentMessageCountToScan"
+                            type="number"
+                            min="1"
+                            max="20"
+                        />
+                    </div>
+                </div>
+            </div>
+
+            <hr />
+
+            <div class="settings-block">
+                <h4>PC端 路径设置</h4>
+                <small
+                    >相对于服务器URL的子文件夹路径 (不要以 /
+                    开头), 若未设置则在根目录寻找</small
+                >
+                <div class="flex-container" style="margin-top: 5px">
+                    <div class="flex1" style="margin-right: 5px">
+                        <label for="CG_cgFolder">CG 文件夹</label>
+                        <input
+                            id="CG_cgFolder"
+                            class="text_pole CG_setting_input"
+                            data-setting-key="cgFolder"
+                            type="text"
+                            placeholder="例如: images/cg"
+                        />
+                    </div>
+                    <div class="flex1">
+                        <label for="CG_bgFolder">BG 文件夹</label>
+                        <input
+                            id="CG_bgFolder"
+                            class="text_pole CG_setting_input"
+                            data-setting-key="bgFolder"
+                            type="text"
+                            placeholder="例如: images/bg"
+                        />
+                    </div>
+                </div>
+            </div>
+
+            <div class="settings-block">
+                <h4>移动端 路径设置</h4>
+                <small
+                    >针对手机的竖屏图片文件夹路径, 若不需要请设为与PC端一致</small
+                >
+                <div class="flex-container" style="margin-top: 5px">
+                    <div class="flex1" style="margin-right: 5px">
+                        <label for="CG_cgFolder_mobile"
+                            >CG 文件夹 (Mobile)</label
+                        >
+                        <input
+                            id="CG_cgFolder_mobile"
+                            class="text_pole CG_setting_input"
+                            data-setting-key="cgFolder_Mobile"
+                            type="text"
+                        />
+                    </div>
+                    <div class="flex1">
+                        <label for="CG_bgFolder_mobile"
+                            >BG 文件夹 (Mobile)</label
+                        >
+                        <input
+                            id="CG_bgFolder_mobile"
+                            class="text_pole CG_setting_input"
+                            data-setting-key="bgFolder_Mobile"
+                            type="text"
+                        />
+                    </div>
+                </div>
+            </div>
+
+            <div class="settings-block">
+                <small
+                    >提示: 在酒馆助手的播放器中导入音频, 使用
+                    <code>[CG:文件名]</code>, <code>[BG:文件名]</code>,
+                    <code>[BGM:歌名]</code>,
+                    <code>[AMB:环境音名]</code> 在世界书中触发。</small
+                >
+            </div>
+        </div>
+    </div>
+</div>
