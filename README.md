@@ -27,10 +27,10 @@ CG-Mode 是一个旨在增强 SillyTavern 沉浸感的扩展插件。它允许�
 
 安装方法
 
-1. 将扩展文件放入SillyTavern的扩展目录：
-   ```
-   scripts/extensions/third-party/CG-Mode/
-   ```
+1. 在酒馆安装扩展
+```
+https://github.com/JiXun-dfwe/CG-Mode
+```
 2. 重启SillyTavern或重新加载页面
 
 ## 配置说明
